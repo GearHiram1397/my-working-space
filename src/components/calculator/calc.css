@@ -1,0 +1,12 @@
+.calc-main-div {
+  text-align: center;
+}
+
+.calc-container {
+  padding: 15px;
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: #1a252f;
+  width: 50%;
+}
