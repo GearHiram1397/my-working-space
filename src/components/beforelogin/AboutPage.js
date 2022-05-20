@@ -13,13 +13,13 @@ const AboutPage = () => {
       <LandingContainer>
           <TitledContainer >
         <Title>
-        <h1>The Developer behind the app 🚀</h1>
+        <h1>The Developer Behind The App </h1>
         <span>
             Hi!  My name is Hiram Moises Lugo Rodriguez and I am a Full Stack Developer student and this is my 
             capstone project for The Full Stack Mastery Bootcamp at CleverProgrammer.com.
             I am a student just like you that had alot of problems organizing my work thats why I
             created my working space to help me change that. 
-            Stop being so unorganized and create your work space now! 
+            Stop being so unorganized and create your work space now! 🚀
         </span>
         </Title>
         <GetstartedContainer>
@@ -59,7 +59,11 @@ const LandingContainer = styled.div`
   display: flex;
   margin-left: 30px;
   justify-content: center;
-  align-items: center;`
+  align-items: center; 
+  @media (max-width: 768px) {
+      flex-direction: column;
+
+    }`
 
 const TitledContainer = styled.div`
   display: flex;
@@ -73,18 +77,40 @@ const Title = styled.div`
         line-height: 1;
         letter-spacing: 1px;
         color: #21f1f5;
+
+        @media (max-width: 768px) {
+          font-size: 40px;
+          text-align: center;
+          line-height: 1.2;
+        }
     }
 
     span{ 
         font-size: 18px;
         line-height: 2;
         letter-spacing: 1px;
+        
+        @media (max-width: 768px) {
+             font-size: 20px;
+            
+          }
     }
+
+    @media (max-width: 768px) {
+             flex: 0.2;
+            text-align: center;
+  
+          }
 `
 const GetstartedContainer = styled.div`
   display: flex;
   margin-top: 30px;
-  justify-content: center;`
+  justify-content: center;
+  @media (max-width: 768px) {
+         margin-bottom: 30px;
+  
+  }
+  `
 const GetstartedBtn = styled.div`
   background-image: linear-gradient(
     to right,
@@ -114,10 +140,24 @@ const GetstartedBtn = styled.div`
 const LandingImgContainer = styled.div`
   margin-left: 40px;
     flex: 0.6;
+
+    
+    @media (max-width: 768px) {
+      margin-left: 0px;
+          }
     `
 const LandingImg = styled.img`
     height: 450px;
   border-radius: 8%;
   width: 400px;
   border: 1px solid grey;
-  box-shadow: 0 0 4px #eee;`
+  box-shadow: 0 0 4px #eee;
+  
+
+  
+  @media (max-width: 768px) {
+    height: 300px;
+    width: 300px;
+          }
+  `
+

@@ -50,7 +50,7 @@ const Container = styled.div`
 `
 const Logo = styled.img`
  height: 90px;
-  width: 100px;
+  width: 90px;
   margin-top: -10px;
   border-radius: 50%;
 `
@@ -58,6 +58,17 @@ const RightSide = styled.div`
    display: flex;
   font-size: 14px;
   margin-top: 2px;
+
+  h1{
+    padding-top: 10px;	
+    font-size: 20px;
+    margin-left: -10px;
+
+    @media (max-width: 768px) {
+            display: none;
+
+          }
+  }
 `
 const Expand = styled.div`
     flex: 1;
@@ -91,5 +102,11 @@ const BtnGrad = styled.div`
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+    margin: 8px;
+    margin-top: 20px;
   }
 `

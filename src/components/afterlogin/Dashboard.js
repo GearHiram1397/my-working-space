@@ -118,12 +118,12 @@ function DashboardContent({component}) {
               sx={{ flexGrow: 1 }}
             >
                 <div className="container">
-                <Link className="thelink" to="/todo"><span> <i  className="fas fa-list"/>Todo</span></Link>
-                <Link className="thelink" to="/calendar"><span> <i  className="fa fa-calendar"/>Calendar</span></Link>
-                <Link className="thelink" to="/pomodoro"><span> <i  className="fa fa-stopwatch"/>Pomodoro</span></Link>
-                <Link className="thelink" to="/notes"><span><i  className="fas fa-sticky-note"/>Notes</span></Link>
-                <Link className="thelink" to="/whiteboard"> <span><i className="fas fa-chalkboard"/>Whiteboard</span></Link>
-                <Link className="thelink" to="/calculator"><span> <i className="fa fa-calculator"/>Calculator</span></Link>
+                <Link className="thelink" to="/todo"> <i  className="fas fa-list"/><span>Todo</span></Link>
+                <Link className="thelink" to="/calendar"><i  className="fa fa-calendar"/><span> Calendar</span></Link>
+                <Link className="thelink" to="/pomodoro"><i  className="fa fa-stopwatch"/><span> Pomodoro</span></Link>
+                <Link className="thelink" to="/notes"><i  className="fas fa-sticky-note"/><span>Notes</span></Link>
+                <Link className="thelink" to="/whiteboard"><i className="fas fa-chalkboard"/> <span>Whiteboard</span></Link>
+                <Link className="thelink" to="/calculator"><i className="fa fa-calculator"/><span> Calculator</span></Link>
                 </div>
             </Typography>
             <IconButton color="inherit">

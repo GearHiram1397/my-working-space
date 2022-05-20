@@ -127,7 +127,10 @@ margin-bottom: 10px;
 border: 1px solid black;
 box-shadow: 0 0 5px black;
 border-radius: 10px;
+@media (max-width: 768px) {
+     width: 100%;
 
+    }
 
  `
 
@@ -142,6 +145,10 @@ width: 20%;
 border-radius: 10px;
 border: 1px solid black;
 box-shadow: 0 0 5px black;
+@media (max-width: 768px) {
+        width: 100%;
+
+    }
 
 &:hover{
 

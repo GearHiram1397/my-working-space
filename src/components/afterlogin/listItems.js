@@ -12,9 +12,10 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import HeadphonesIcon from '@mui/icons-material/Headphones';
 import CloudIcon from '@mui/icons-material/Cloud';
 import {Link} from 'react-router-dom';
-import {Avatar} from '@mui/material'
+//import {Avatar} from '@mui/material'
 import Clock from 'react-live-clock'
 import BasicList from './ProfilePopup'
+import styled from 'styled-components'
 
 
 export const MainListItems = () => {
@@ -88,10 +89,23 @@ export const SecondaryListItems = () => {
     </ListItemButton>
     <ListItemButton onClick={() => setPopup(!popup)} style={{display: "flex", justifyContent: "center"}}>
     {(popup)? (  <ListItemIcon >
-      <Avatar sx={{ width: 60, height: 60, }} alt="user" src="https://avatars.githubusercontent.com/u/73570283?v=4" />
+      <Avatar  alt="user" src="https://avatars.githubusercontent.com/u/73570283?v=4" />
       </ListItemIcon >) : (<>
         <BasicList />
       </>)}
     </ListItemButton>
   </React.Fragment>
 )};
+
+const Avatar= styled.img`
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+`

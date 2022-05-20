@@ -76,11 +76,22 @@ box-shadow: 0 0 10px grey;
       border-style: inset;
       border-radius: 20px;
       
+      @media (max-width: 768px) {
+        font-size: 18px;
+        text-align: center;
+        line-height: 2;
+
+    }
     }
 
     h3{
       font-size: 28px;
       font-weight: 500;
+      @media (max-width: 768px) {
+        font-size: 18px;
+        text-align: center;
+
+    }
      
     }
 `

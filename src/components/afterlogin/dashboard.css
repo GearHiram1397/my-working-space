@@ -13,8 +13,15 @@ i {
 
 .container span {
   color: white;
+ 
 }
 
 .container span:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .container span {
+    display: none;
+  }
 }

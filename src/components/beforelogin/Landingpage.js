@@ -11,7 +11,7 @@ const LandingPage = () => {
       <LandingContainer>
           <TitledContainer >
         <Title>
-        <h1>Everything you need to organize your Work </h1>
+        <h1>Everything You Need To Organize Your Work </h1>
         <span>
             My Working space is a easy to use app, made for students and day to day working people like you!. This app was made to help make your life easier when you
           are trying to organize your work space to help you be more productive while unlocking achivements by studying and completing your own work. Stop being so unorganized and create your work space now! 
@@ -34,7 +34,8 @@ const LandingPage = () => {
 export default LandingPage
 
 const Wrapper = styled.div`
- 
+ height: 100vh;
+  width: 100vw;
   background: #4b6cb7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -54,7 +55,14 @@ const LandingContainer = styled.div`
     display: flex;
     margin-left: 30px;
     justify-content: center;
-    align-items: center;`
+    align-items: center;
+    
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+    }
+    `
 
 const TitledContainer = styled.div`
     display: flex;
@@ -66,14 +74,30 @@ const Title = styled.div`
 
     h1{ 
         font-size: 50px;
-        line-height: 1;
+        line-height: 1.2;
         color: #21f1f5;
+
+        @media (max-width: 768px) {
+          font-size: 40px;
+          text-align: center;
+        }
     }
 
     span{ 
         font-size: 18px;
         line-height: 2;
+
+        @media (max-width: 768px) {
+             font-size: 20px;
+            text-align: center;
+          }
     }
+
+    @media (max-width: 768px) {
+             flex: 0.2;
+            text-align: center;
+  
+          }
 `
 const GetstartedContainer = styled.div`
     display: flex;
@@ -113,6 +137,10 @@ const LandingImgContainer = styled.div`
       margin-left: 20px;
     
       box-shadow: 0 0 4px #eee;
+      @media (max-width: 768px) {
+             display: none;
+
+          }
     `
 const LandingImg = styled.img`
   
